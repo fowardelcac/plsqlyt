@@ -1,0 +1,21 @@
+SET SERVEROUTPUT ON
+
+DECLARE
+    num NUMBER(2);
+BEGIN
+    FOR num IN 10..20 LOOP
+        DBMS_OUTPUT.PUT_LINE('VALOR DEL NUMER ' || num);
+    END LOOP;
+END;
+
+BEGIN
+    FOR f IN REVERSE 0..5 LOOP
+        DBMS_OUTPUT.PUT_LINE('VALOR DE F = ' || f);
+    END LOOP;
+END;
+
+BEGIN
+    FOR f IN 1..5 LOOP
+        DBMS_OUTPUT.PUT_LINE('6 X '|| f || '=' ||(f*6));
+    END LOOP;
+END;
